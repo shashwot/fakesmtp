@@ -5,6 +5,9 @@
 #### Entrypoint
 
 ```
+java -jar fakeSMTP-2.0.jar
+
+Modes:
 -s: start the SMTP server automatically at launch  
 -p: on a different port 
 -b: with no gui
