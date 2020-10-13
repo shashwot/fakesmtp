@@ -5,7 +5,7 @@
 #### Entrypoint
 
 ```
-java -jar fakeSMTP-2.0.jar
+$ java -jar fakeSMTP-2.0.jar
 
 Modes:
 -s: start the SMTP server automatically at launch  
@@ -18,14 +18,14 @@ Modes:
 
 #### Docker Build
 ```
-git clone https://github.com/shashwot/fakesmtp.git
-cd fakesmtp
-chmod +x entrypoint.sh
-docker build -t "shashwot/fakesmtp:latest" .
+$ git clone https://github.com/shashwot/fakesmtp.git
+$ cd fakesmtp 
+$ chmod +x entrypoint.sh
+$ docker build -t "shashwot/fakesmtp:latest" .
 ```
 
 
 #### Docker Run
 ```
-docker run -d --name mail -p 25:25 shashwot/fakesmtp:latest
+$ docker run -d --name mail -p 25:25 shashwot/fakesmtp:latest
 ```
